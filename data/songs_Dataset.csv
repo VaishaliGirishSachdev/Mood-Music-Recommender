@@ -1,20 +1,6 @@
-title,artist,mood
-Sunshine,Lovely Band,joy
-Let Her Go,Passenger,sadness
-Firework,Katy Perry,joy
-Someone Like You,Adele,sadness
-Lose Yourself,Eminem,anger
-Heavy,Linkin Park,tired
-Zinda,Bhaag Milkha Bhaag,anger
-Raabta,Arijit Singh,joy
-Channa Mereya,Arijit Singh,sadness
-Tera Yaar Hoon Main,Arijit Singh,sadness
-Zehnaseeb,Chinmayi Sripaada,joy
-Agar Tum Saath Ho,Alka Yagnik,sadness
-Apna Time Aayega,Ranveer Singh,anger
-Ilahi,Arijit Singh,joy
-Bhula Dena,Mohit Chauhan,sadness
-Sadda Haq,Mohit Chauhan,anger
-Bekhayali,Sachet Tandon,sadness
-Khairiyat,Arijit Singh,sadness
-Udd Gaye,Ritviz,joy
+mood,song_name,artist
+happy,Phir Se Ud Chala,Rockstar
+sad,Channa Mereya,Ae Dil Hai Mushkil
+angry,Khoon Chala,Rang De Basanti
+energetic,Zinda,Bhaag Milkha Bhaag
+neutral,Tum Se Hi,Jab We Met

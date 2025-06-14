@@ -7,7 +7,7 @@ print("Tell me how you're feeling:")
 user_input = input("> ")
 
 emotion = detect_mood(user_input)
-print(f"\nDtected Emotion: {emotion.capitalize()}")
+print(f"\nDetected Emotion: {emotion.capitalize()}")
 
 songs = get_songs_by_mood(emotion)
 

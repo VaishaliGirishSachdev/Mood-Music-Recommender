@@ -1,13 +1,26 @@
-# Importing Package
 from nrclex import NRCLex
 
-# Function for user's mood detection.
-def detect_mood(user_input):
-    emotion = NRCLex(user_input) # Object
-    emotions = emotion.top_emotions  # list of (emotion, score)
+def detect_mood(text):
+    emotion = NRCLex(text)
+    raw_emotions = emotion.raw_emotion_scores
 
-    if emotions:
-        return emotions[0][0]
-    else:
+    if not raw_emotions:
         return "neutral"
-    
+
+    # Get emotion with highest score
+    primary = max(raw_emotions, key=raw_emotions.get)
+
+    # Map complex emotion to general mood
+    mapping = {
+        "joy": "happy",
+        "trust": "happy",
+        "positive": "happy",
+        "anticipation": "energetic",
+        "anger": "angry",
+        "fear": "sad",
+        "sadness": "sad",
+        "disgust": "angry",
+        "surprise": "energetic"
+    }
+
+    return mapping.get(primary, "neutral")

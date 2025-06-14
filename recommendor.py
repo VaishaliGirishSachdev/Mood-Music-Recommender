@@ -8,6 +8,6 @@ def get_songs_by_mood(mood):
 
         for r in reader:
             if r['mood'].strip().lower() == mood.lower():
-                songs.append(f"{r['title']} by {r['artist']}")
+                songs.append(f"{r['song_name']} by {r['artist']}")
 
     return songs

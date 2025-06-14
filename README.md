@@ -16,15 +16,13 @@ This project was created to explore how simple AI and DSA (data structures and a
 ## Project Structure
 
 MoodMusicRecommender/
-│
-├── data/
-│   └── songs_dataset.csv         # Contains songs and associated emotions
-│
-├── mood_detector.py              # Detects emotion from user input
-├── recommender.py                # Recommends songs based on emotion
-├── main.py                       # Main entry point to run the app
-├── requirements.txt              # Python packages required
-└── README.md                     # Project description and guide
+    data/
+        songs_dataset.csv     # Contains songs and associated emotions
+mood_detector.py              # Detects emotion from user input
+recommender.py                # Recommends songs based on emotion
+main.py                       # Main entry point to run the app
+requirements.txt              # Python packages required
+README.md                     # Project description and guide
 
 
 ## How to Install and Run

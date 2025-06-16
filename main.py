@@ -1,22 +1,28 @@
+import streamlit as st
 from mood_detector import detect_mood
 from recommendor import get_songs_by_mood
 
-print("Mood-Based Music Recommender")
-print("Tell me how you're feeling:")
+# Set page settings
+st.set_page_config(page_title="Mood Music Recommender", layout="centered")
 
-user_input = input("> ")
+# Page title
+st.title("🎵 Mood-Based Music Recommender")
 
-emotion = detect_mood(user_input)
-print(f"\nDetected Emotion: {emotion.capitalize()}")
+# Ask user for input
+user_input = st.text_input("Tell me how you're feeling:")
 
-songs = get_songs_by_mood(emotion)
+# When input is entered
+if user_input:
+    # Detect mood
+    emotion = detect_mood(user_input)
+    st.success(f"Detected Emotion: **{emotion.capitalize()}**")
 
-if songs:
-    print("\n Recommended Songs: ")
-    for idx, song in enumerate(songs, 1):
-        print(f"{idx}.{songs}")
+    # Recommend songs
+    songs = get_songs_by_mood(emotion)
 
-else:
-    print("Sorry, no songs for your emotion")
-
-    
+    if songs:
+        st.subheader("🎧 Recommended Songs:")
+        for idx, song in enumerate(songs, 1):
+            st.markdown(f"{idx}. {song}")
+    else:
+        st.warning("😔 Sorry, no songs found for your emotion.")

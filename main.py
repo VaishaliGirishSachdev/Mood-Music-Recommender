@@ -1,8 +1,14 @@
 import streamlit as st
+import nltk
+
+
+nltk.download('punkt', quiet=True)
+
 from mood_detector import detect_mood
 from recommendor import get_songs_by_mood
+import streamlit as st
 
-# Set page settings
+# page settings
 st.set_page_config(page_title="Mood Music Recommender", layout="centered")
 
 # Page title

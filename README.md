@@ -10,7 +10,6 @@ This project was created to explore how simple AI and DSA (data structures and a
 - Recommends songs based on the detected emotion using a small dataset stored in CSV format
 - Easy to understand and run
 - Requires only one lightweight Python package (NRCLex)
-- Well-commented code suitable for beginners and educational projects
 - Includes both English and Indian songs
 
 ## Project Structure
@@ -27,6 +26,15 @@ README.md                     # Project description and guide
 
 ## How to Install and Run
 
+1 way:
+
+Try the live demo of my Mood-Based Music Recommender app built with Streamlit:  
+
+Click here to run the app
+(https://mood-music-recommender-jvcrurhd4vz5apppprwitanp.streamlit.app/)
+
+
+2 way:
 1. Open the project in VS Code or any code editor.
 2. Open the terminal and install the required package using this command:
 
@@ -41,7 +49,7 @@ python main.py
 
 
 4. Enter a sentence describing your mood 
-(for example: "I feel so exhausted and frustrated today").
+(for example: "I am very happy, I got promotion. Hurrah!!!").
 
 The application will detect your emotion and suggest songs based on that emotion.
 
@@ -80,11 +88,7 @@ This project supports the following emotions, depending on the input:
 
 ## Data Format
 
-The songs are stored in a CSV file located at `data/songs_dataset.csv`. Each row should follow this format:
-
-
-title,artist,mood
-
+The songs are stored in a CSV file located at `data/songs_dataset.csv`.
 
 Example:
 
@@ -105,4 +109,5 @@ This is already included in `requirements.txt`.
 
 ## About the Project
 
-This project was made to explore how text-based emotion detection can be combined with basic file handling and logic in Python to create a music recommendation system. It is kept lightweight and clean to run easily on any machine and is a great way to practice Python, file I/O, conditional logic, basic NLP.
+This project was made to explore how text-based emotion detection can be combined with basic file handling and logic in Python to create a music recommendation system. It is lightweight and clean to run easily on any machine, 
+Techniques: file I/O, conditional logic, basic NLP.

@@ -25,4 +25,4 @@ if user_input:
         for idx, song in enumerate(songs, 1):
             st.markdown(f"{idx}. {song}")
     else:
-        st.warning("😔 Sorry, no songs found for your emotion.")
+        st.warning("Sorry, no songs found for your emotion.")

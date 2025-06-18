@@ -1,11 +1,3 @@
-import nltk
-
-# Ensure required NLTK data is available
-try:
-    nltk.data.find('tokenizers/punkt')
-except LookupError:
-    nltk.download('punkt')
-
 from nrclex import NRCLex
 
 def detect_mood(text):

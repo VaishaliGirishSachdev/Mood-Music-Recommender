@@ -1,7 +1,4 @@
-import streamlit as st
 import nltk
-
-
 nltk.download('punkt', quiet=True)
 
 from mood_detector import detect_mood
@@ -21,7 +18,7 @@ user_input = st.text_input("Tell me how you're feeling:")
 if user_input:
     # Detect mood
     emotion = detect_mood(user_input)
-    st.success(f"Detected Emotion: **{emotion.capitalize()}**")
+    st.success(f"Detected Emotion: {emotion.capitalize()}")
 
     # Recommend songs
     songs = get_songs_by_mood(emotion)
@@ -31,4 +28,4 @@ if user_input:
         for idx, song in enumerate(songs, 1):
             st.markdown(f"{idx}. {song}")
     else:
-        st.warning("Sorry, no songs found for your emotion.")
+        st.write("Sorry, no songs found for your emotion.")

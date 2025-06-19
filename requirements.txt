@@ -1,3 +1,4 @@
-streamlit
-textblob
+gradio
 nrclex
+textblob
+nltk

@@ -25,16 +25,6 @@ README.md                     # Project description and guide
 
 
 ## How to Install and Run
-
-1 way:
-
-Try the live demo of my Mood-Based Music Recommender app built with Streamlit:  
-
-Click here to run the app
-(https://mood-music-recommender-jvcrurhd4vz5apppprwitanp.streamlit.app/)
-
-
-2 way:
 1. Open the project in VS Code or any code editor.
 2. Open the terminal and install the required package using this command:
 
